@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: flask-app
+  name: podinfo
   namespace: default
   labels:
     app: flask-app
@@ -11,14 +11,14 @@ spec:
   replicas: 1
   selector:
     matchLabels:
-      app: flask-app
+      app: podinfo
   template:
     metadata:
       labels:
-        app: flask-app
+        app: podinfo
     spec:
       containers:
-        - name: flask
+        - name: podinfod
           image: saip1106/flask-fluxcd:9  # ✅ This tag will be auto-updated by Flux
           ports:
             - containerPort: 5000
