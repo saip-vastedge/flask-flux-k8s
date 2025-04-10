@@ -7,5 +7,5 @@ spec:
   imageRepositoryRef:
     name: flask-image
   policy:
-    alphabetical:
-      order: desc  # or use 'desc' to pick the highest number
+    numerical:
+      order: asc  # or use 'desc' to pick the highest number
