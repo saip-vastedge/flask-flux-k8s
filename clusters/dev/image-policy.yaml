@@ -8,4 +8,4 @@ spec:
     name: flask-image
   policy:
     alphabetical:
-      order: asc  # or use 'desc' to pick the highest number
+      order: desc  # or use 'desc' to pick the highest number
