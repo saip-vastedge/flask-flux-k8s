@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: flask-app
-  name-space: default
+  namespace: default
   labels:
     app: flask-app
   annotations:
