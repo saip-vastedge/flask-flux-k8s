@@ -14,7 +14,11 @@ spec:
         branch: main
     commit:
       author:
-        name: Flux Bot
-        email: flux@example.com
+        name: fluxcdbot
+        email: fluxcdbot@users.noreply.github.com
+      messageTemplate: '{{range .Changed.Changes}}{{.OldValue}} -> {{.NewValue}}{{end}}'
+    push:
+      branch: main
   update:
+    path: ./clusters/dev
     strategy: Setters
