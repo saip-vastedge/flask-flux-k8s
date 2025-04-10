@@ -19,6 +19,6 @@ spec:
     spec:
       containers:
         - name: flask
-          image: saip1106/flask-fluxcd:1.0.0
+          image: saip1106/flask-fluxcd:latest  # ✅ This tag will be auto-updated by Flux
           ports:
             - containerPort: 5000
