@@ -7,6 +7,5 @@ spec:
   imageRepositoryRef:
     name: flask-image
   policy:
-    tag:
-      pattern: '^\d+$'
-      extract: {}
+    alphabetical:
+      order: asc  # or use 'desc' to pick the highest number
