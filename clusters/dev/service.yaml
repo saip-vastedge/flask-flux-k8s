@@ -5,7 +5,7 @@ metadata:
   namespace: default
 spec:
   selector:
-    app: flask-app
+    app: podinfo
   ports:
     - port: 80
       targetPort: 5000
