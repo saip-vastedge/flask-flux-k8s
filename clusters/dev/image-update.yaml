@@ -17,4 +17,4 @@ spec:
         name: Flux Bot
         email: flux@example.com
   update:
-    strategy: Update
+    strategy: Setters
