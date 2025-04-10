@@ -19,6 +19,6 @@ spec:
     spec:
       containers:
         - name: podinfod
-          image: saip1106/flask-fluxcd:9  # ✅ This tag will be auto-updated by Flux
+          image: saip1106/flask-fluxcd:9  # {"$imagepolicy": "flux-system:podinfo"}
           ports:
             - containerPort: 5000
