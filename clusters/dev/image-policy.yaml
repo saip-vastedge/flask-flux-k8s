@@ -7,5 +7,6 @@ spec:
   imageRepositoryRef:
     name: flask-image
   policy:
-    semver:
-      range: "1.x"
+    tag:
+      pattern: '^\d+$'
+      extract: {}
