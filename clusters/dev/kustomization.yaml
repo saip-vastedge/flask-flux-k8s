@@ -1,9 +1,22 @@
-apiVersion: kustomize.config.k8s.io/v1beta1
+# apiVersion: kustomize.config.k8s.io/v1beta1
+# kind: Kustomization
+# resources:
+#   - deployment.yaml
+#   - service.yaml
+#   - image-repository.yaml
+#   - image-policy.yaml
+#   - image-update.yaml
+#   - capacitor.yaml
+apiVersion: kustomize.toolkit.fluxcd.io/v1
 kind: Kustomization
-resources:
-  - deployment.yaml
-  - service.yaml
-  - image-repository.yaml
-  - image-policy.yaml
-  - image-update.yaml
-  - capacitor.yaml
+metadata:
+  name: flux-system
+  namespace: flux-system
+spec:
+  path: ./clusters/dev
+  prune: true
+  interval: 10m
+  force: true   # ✅ Add this to make Git always win
+  sourceRef:
+    kind: GitRepository
+    name: flux-system
