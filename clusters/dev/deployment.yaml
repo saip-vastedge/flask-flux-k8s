@@ -19,6 +19,6 @@ spec:
     spec:
       containers:
         - name: podinfod
-          image: saip1106/flask-fluxcd:15 # {"$imagepolicy": "flux-system:podinfo"}
+          image: saip1106/flask-fluxcd:16 # {"$imagepolicy": "flux-system:podinfo"}
           ports:
             - containerPort: 5000
