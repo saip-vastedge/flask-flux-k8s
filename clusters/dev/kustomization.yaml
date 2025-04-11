@@ -15,7 +15,7 @@ metadata:
 spec:
   path: ./clusters/dev
   prune: true
-  interval: 10m
+  interval: 1m
   force: true   # ✅ Add this to make Git always win
   sourceRef:
     kind: GitRepository
